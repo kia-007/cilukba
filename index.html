@@ -8,347 +8,134 @@
     <title>Document</title>
 </head>
 <script src="assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/splide/dist/js/splide.min.js"></script>
 <script src="assets/jquery/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="assets/js/bootstrap.js"></script>
-<!-- Slick slider -->
-<script type="text/javascript" src="assets/js/slick.js"></script>
-<!-- Counter -->
-<script type="text/javascript" src="assets/js/waypoints.js"></script>
-<script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
-<!-- Mixit slider -->
-<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
-<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
 <script src="assets/js/custom.js"></script>
 <link rel="stylesheet" href="assets/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/splide/dist/css/splide.min.css">
+<link rel="stylesheet" href="assets/css/vismis.css">
 <link rel="stylesheet" href="assets/css/navbar.css">
-<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-<link href="assets/css/font-awesome.css" rel="stylesheet">
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-<link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
-<link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/plane.css">
+<link rel="stylesheet" href="assets/css/main.css">
 
 <body>
-    <div id="navbar" class="bg-info d-flex justify-content-md-between">
+    <section id="navbar" class="d-flex justify-content-md-between">
         <div>
-            <img class="main-logo" src="assets/images/main-logo.png" alt="main logo is 404">
-            <img class="medsos-logo" src="assets/images/instagram-logo.png" alt="tiktok logo 404">
-            <img class="medsos-logo" src="assets/images/tiktok-logo.png" alt="tiktok logo 404">
-            <img class="medsos-logo" src="assets/images/youtube-logo.png" alt="tiktok logo 404">
+            <img class="main-logo" src="assets/images/main-logo.png" alt="image logo is 404">
+            <img class="medsos-logo" src="assets/images/instagram-logo.png" alt="image logo 404">
+            <img class="medsos-logo" src="assets/images/tiktok-logo.png" alt="image logo 404">
+            <img class="medsos-logo" src="assets/images/youtube-logo.png" alt="image logo 404">
         </div>
         <div class="align-self-center">
-            <a href="#about-us" class="button-custom bg-info">About us</a>
-            <a href="#facilities" class="button-custom bg-info">Facilities</a>
-            <a href="#clients" class="button-custom bg-info">Our Clients</a>
+            <a href="#about-us" class="button-custom">About us</a>
+            <a href="#facilities" class="button-custom">Facilities</a>
+            <a href="#clients" class="button-custom">Our Clients</a>
         </div>
-    </div>
-    <section id="mu-slider">
-        <!-- Start single slider item -->
-        <div class="mu-slider-single">
-            <div class="mu-slider-img">
-                <figure>
-                    <img src="assets/images/main-slide-1.jpeg" alt="img">
-                </figure>
-            </div>
-            <div class="mu-slider-content">
-                <h4>Welcome To Cilukba</h4>
-                <span></span>
-                <h2>We Will Help You To Learn</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint
-                    unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-                <a href="#" class="mu-read-more-btn">Read More</a>
-            </div>
-        </div>
-        <!-- Start single slider item -->
-        <!-- Start single slider item -->
-        <div class="mu-slider-single">
-            <div class="mu-slider-img">
-                <figure>
-                    <img src="assets/images/main-slide-2.jpeg" alt="img">
-                </figure>
-            </div>
-            <div class="mu-slider-content">
-                <h4>We are ............</h4>
-                <span></span>
-                <h2>Best Education ............</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint
-                    unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-                <a href="#" class="mu-read-more-btn">Read More</a>
-            </div>
-        </div>
-        <!-- Start single slider item -->
-        <!-- Start single slider item -->
-        <div class="mu-slider-single">
-            <div class="mu-slider-img">
-                <figure>
-                    <img src="assets/images/main-slide-3.jpg" alt="img">
-                </figure>
-            </div>
-            <div class="mu-slider-content">
-                <h4>Are you ............</h4>
-                <span></span>
-                <h2>Yhe kids are ............</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint
-                    unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-                <a href="#" class="mu-read-more-btn">Read More</a>
-            </div>
-        </div>
-        <!-- Start single slider item -->
     </section>
-    <!-- End Slider -->
-    <!-- Start service  -->
-    <section id="mu-service">
+    <section id="main-slider" class="splide" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="assets/images/Slide-1.jpeg" /></li>
+                <li class="splide__slide"><img src="assets/images/Slide-2.JPG" /></li>
+            </ul>
+        </div>
+    </section>
+    <section id="about">
+        <div class="row">
+            <div id="left-about" class="col-7 box border-lights"></div>
+            <div id="right-about" class="col-5"></div>
+        </div>
+        <div class="cloud row">
+            <div class="light"></div>
+            <img id="plane"
+                src="https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight-by-vexels.png" />
+        </div>
+        <div id="we-are" class="container text-center">
+            <div class="row row-cols-5">
+                <img class="col we-are" src="assets/images/w1.jpg" />
+                <h5 class="txt-were">Confident</h5>
+                <img class="col we-are" src="assets/images/w2.jpg" />
+                <h5 class="txt-were">Cooperative</h5>
+                <img class="col we-are" src="assets/images/w3.jpg" />
+                <h5 class="txt-were">Knowladgeable</h5>
+                <img class="col we-are" src="assets/images/w4.JPG" />
+                <h5 class="txt-were">Responsible</h5>
+                <img class="col we-are" src="assets/images/w5.JPG" />
+                <h5 class="txt-were">Respectful</h5>
+                <img class="col we-are" src="assets/images/w6.jpg" />
+                <h5 class="txt-were">Tolerant</h5>
+                <img class="col we-are" src="assets/images/w7.jpg" />
+                <h5 class="txt-were">Innovative</h5>
+                <img class="col we-are" src="assets/images/w8.jpeg" />
+            </div>
+        </div>
+    </section>
+    <section id="vismis">
+        <div id="content-vismis" class="row row-cols-2">
+            <div class="col-5 vismis-left">
+                <img id="vismis-img" src="assets/images/vismis.png" />
+            </div>
+            <div class="col-7 vismis-right">
+                <h1>Vission</h1>
+                <p>A mission statement is a short summary of an organization’s core purpose, focus, and aims.
+                    This usually includes a brief description of what the organization does and its key
+                    objectives.</p>
+                <h1>Mission</h1>
+                <p>A vision statement is a short description of an organization’s aspirations and the wider
+                    impact it aims to create. It should be a guiding beacon to everyone within the organization
+                    and something which underpins internal decision-making and determines the intended direction
+                    of the organization.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="mu-service-area">
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-book"></span>
-                            <h3>Learn Online</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti
-                                dolorem exercitationem praesentium, est!</p>
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <a href="https://goo.gl/maps/LoLk1rYrLzTFMLYU8">Our School</a>
+                            </div>
                         </div>
-                        <!-- Start single service -->
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-users"></span>
-                            <h3>Expert Teachers</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti
-                                dolorem exercitationem praesentium, est!</p>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <a href= https://wa.me/+6281316646924>Admin Contact</a>
+                            </div>
                         </div>
-                        <!-- Start single service -->
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-table"></span>
-                            <h3>Best Classrooms</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti
-                                dolorem exercitationem praesentium, est!</p>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <a href="mailto:adm@cilukba.sch.id" target="_blank" rel="noopener noreferrer">Admin E-mail</a>
+                            </div>
                         </div>
-                        <!-- Start single service -->
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
-    </section>
-    <!-- End service  -->
-
-    <!-- Start about us -->
-    <section id="mu-about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="about-us" class="mu-about-us-area">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="mu-about-us-left">
-                                    <!-- Start Title -->
-                                    <div class="mu-title">
-                                        <h2>About Us</h2>
-                                    </div>
-                                    <!-- End Title -->
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum pariatur fuga
-                                        eveniet soluta aspernatur rem, nam voluptatibus voluptate voluptates sapiente,
-                                        inventore. Voluptatem, maiores esse molestiae.</p>
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        <li>Saepe a minima quod iste libero rerum dicta!</li>
-                                        <li>Voluptas obcaecati, iste porro fugit soluta consequuntur. Veritatis?</li>
-                                        <li>Ipsam deserunt numquam ad error rem unde, omnis.</li>
-                                        <li>Repellat assumenda adipisci pariatur ipsam eos similique, explicabo.</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quaerat
-                                        harum facilis excepturi et? Mollitia!</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="mu-about-us-right">
-                                    <a id="mu-abtus-video" href="https://www.youtube.com/watch?v=Fk7OHPbnaHk"
-                                        target="mutube-video">
-                                        <img src="https://i.ytimg.com/vi/Fk7OHPbnaHk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLASDLzrR8eEfIXhl4rmzybHbwQPMw" alt="img">
-                                    </a>
-                                </div>
-                            </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, All Right Reserved <a
+                                    href="https://cilukba.sch.id">Cilukba</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End about us -->
-
-    <!-- Start our teacher -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="facilities" class="mu-our-teacher-area">
-                        <!-- begain title -->
-                        <div class="mu-title">
-                            <h2>Our Facilities</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, repudiandae, suscipit
-                                repellat minus molestiae ea.</p>
-                        </div>
-                        <!-- end title -->
-                        <!-- begain our teacher content -->
-                        <div class="mu-our-teacher-content">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-3  col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Brian Dean</h4>
-                                            <span>Math Teacher</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
-                                                pariatur recusandae odio dignissimos. Eligendi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-02.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>James Hein</h4>
-                                            <span>Physics Teacher</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
-                                                pariatur recusandae odio dignissimos. Eligendi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-03.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Rebeca Michel</h4>
-                                            <span>English Teacher</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
-                                                pariatur recusandae odio dignissimos. Eligendi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="assets/img/teachers/teacher-04.png" alt="teacher img">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="#"><span class="fa fa-facebook"></span></a>
-                                                <a href="#"><span class="fa fa-twitter"></span></a>
-                                                <a href="#"><span class="fa fa-linkedin"></span></a>
-                                                <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>John Doe</h4>
-                                            <span>Biology Teacher</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod
-                                                pariatur recusandae odio dignissimos. Eligendi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End our teacher content -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End our teacher -->
-
-    <!-- Start testimonial -->
-    <section id="mu-testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="clients" class="mu-testimonial-area">
-                        <div id="mu-testimonial-slide" class="mu-testimonial-content">
-                            <!-- start testimonial single item -->
-                            <div class="mu-testimonial-item">
-                                <div class="mu-testimonial-quote">
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum
-                                            soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque
-                                            id.</p>
-                                    </blockquote>
-                                </div>
-                                <div class="mu-testimonial-img">
-                                    <img src="assets/img/testimonial-1.png" alt="img">
-                                </div>
-                                <div class="mu-testimonial-info">
-                                    <h4>John Doe</h4>
-                                    <span>Happy Student</span>
-                                </div>
-                            </div>
-                            <!-- end testimonial single item -->
-                            <!-- start testimonial single item -->
-                            <div class="mu-testimonial-item">
-                                <div class="mu-testimonial-quote">
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum
-                                            soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque
-                                            id.</p>
-                                    </blockquote>
-                                </div>
-                                <div class="mu-testimonial-img">
-                                    <img src="assets/img/testimonial-3.png" alt="img">
-                                </div>
-                                <div class="mu-testimonial-info">
-                                    <h4>Rebaca Michel</h4>
-                                    <span>Happy Parent</span>
-                                </div>
-                            </div>
-                            <!-- end testimonial single item -->
-                            <!-- start testimonial single item -->
-                            <div class="mu-testimonial-item">
-                                <div class="mu-testimonial-quote">
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum
-                                            soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque
-                                            id.</p>
-                                    </blockquote>
-                                </div>
-                                <div class="mu-testimonial-img">
-                                    <img src="assets/img/testimonial-2.png" alt="img">
-                                </div>
-                                <div class="mu-testimonial-info">
-                                    <h4>Stev Smith</h4>
-                                    <span>Happy Student</span>
-                                </div>
-                            </div>
-                            <!-- end testimonial single item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End testimonial -->
+    </footer>
 
 </body>
 <script>
@@ -387,9 +174,34 @@
                 'height': '2vh'
             });
             audio_hover.pause();
-            audio_hover.currentTime = 0
+            audio_hover.currentTime = 0;
         });
+
+        $('#left-about').append(
+            `<h1>About US</h1>
+            <p>
+                &emsp;&emsp;Cilukbaa Preschool & Kindergarten, and Sekolah Bina Tunas Cemerlang are 
+                two integrated schools in Bogor.<br><br>&emsp;Cilukbaa Preschool & Kindergarten is established 
+                in 2004.  
+                We have four levels in guiding children within their golden age years. 
+                <br><br>&emsp;Starts from the early year, 
+                Toddler class, then Preschool, Kindergarten A and Kindergarten B. Sekolah Bina Tunas 
+                Cemerlang is for the Primary levels.
+            </p>`
+        )
+        $('#right-about').append(
+            `<img src="assets/images/about.png" alt="image 404">`
+        )
     });
+
+    var elms = document.getElementsByClassName('splide');
+    for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i], {
+            type: 'fade',
+            rewind: true,
+            autoplay: true,
+        }).mount();
+    }
 </script>
 
 </html>

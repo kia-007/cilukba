@@ -1,0 +1,79 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#we-are{
+    position: relative;
+    max-width: 100vw;
+    padding: 10%;
+    top: -420px;
+    height: auto;
+}
+
+.we-are{
+    padding: 0;
+    height: 20vh;
+}
+
+.txt-were{
+    height: 20vh;
+    padding-top: 5%;
+    color: white;
+    background-color: #341467;
+}
+
+.splide__slide img {
+    width: 100vw;
+    height: 94vh;
+}
+
+#about {
+    margin: 5%;
+    height: 130vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.box {
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.border-lights {
+    background-color: #4eb3e7;
+    background-image: radial-gradient(white 90%, transparent 30%);
+    z-index: 1;
+}
+
+.border-lights::before {
+    content: "";
+    display: block;
+    background-color: hsla(0, 0%, 100%, 1);
+    position: absolute;
+    top: var(--border-thickness);
+    left: var(--border-thickness);
+    height: calc(var(--box-size) - var(--border-thickness) * 2);
+    width: calc(var(--box-size) - var(--border-thickness) * 2);
+    z-index: -1;
+}
+
+#vismis{
+    background-color: #fad700;
+}
+
+#content-vismis{
+    margin: 5%;
+}
+
+#vismis-img{
+    width: 100%;
+    height: auto;
+}
+
+.vismis-right{
+    padding-top: 3%;
+    color: #331567;
+}

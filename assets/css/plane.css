@@ -1,0 +1,21 @@
+#plane{
+    width: auto;
+    height: 50vh;
+}
+
+.cloud {
+    position: relative;
+    animation: cloud 10s linear 0s infinite reverse;
+    z-index: 99;
+    top: -230px;
+}
+
+@keyframes cloud {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 1%;
+    }
+}

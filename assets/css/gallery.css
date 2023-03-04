@@ -1,0 +1,24 @@
+#gallery{
+    position: relative;
+    width: 100vw;
+    padding: 10%;
+    height: auto;
+    background-image: url('../images/padangrumput.png');
+}
+
+.gallery{
+    padding: 0;
+    height: 20vh;
+}
+
+.fullSize {
+    height: auto;
+    width: 30vw;
+}
+
+.txt-gallery{
+    height: 20vh;
+    padding-top: 5%;
+    color: white;
+    background-color: #0804ff;
+}

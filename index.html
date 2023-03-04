@@ -10,27 +10,34 @@
 <script src="assets/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/splide/dist/js/splide.min.js"></script>
 <script src="assets/jquery/jquery.min.js"></script>
-<script src="assets/js/custom.js"></script>
 <link rel="stylesheet" href="assets/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/splide/dist/css/splide.min.css">
-<link rel="stylesheet" href="assets/css/vismis.css">
 <link rel="stylesheet" href="assets/css/navbar.css">
-<link rel="stylesheet" href="assets/css/footer.css">
-<link rel="stylesheet" href="assets/css/plane.css">
 <link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/cloud.css">
+<link rel="stylesheet" href="assets/css/amp.css">
+<link rel="stylesheet" href="assets/css/details_amp.css">
+<link rel="stylesheet" href="assets/css/details_mission.css">
+<link rel="stylesheet" href="assets/css/details_program.css">
+<link rel="stylesheet" href="assets/css/gallery.css">
 
 <body>
     <section id="navbar" class="d-flex justify-content-md-between">
         <div>
             <img class="main-logo" src="assets/images/main-logo.png" alt="image logo is 404">
-            <img class="medsos-logo" src="assets/images/instagram-logo.png" alt="image logo 404">
-            <img class="medsos-logo" src="assets/images/tiktok-logo.png" alt="image logo 404">
-            <img class="medsos-logo" src="assets/images/youtube-logo.png" alt="image logo 404">
+            <div id="group-medsos">
+                <div class="bkg-round-white rounded-circle bg-light d-flex justify-content-center">
+                    <img id="instgr" class="medsos-logo" src="assets/images/instagram-logo.png" alt="image logo 404">
+                </div>
+            </div>
         </div>
         <div class="align-self-center">
-            <a href="#about-us" class="button-custom">About us</a>
-            <a href="#facilities" class="button-custom">Facilities</a>
-            <a href="#clients" class="button-custom">Our Clients</a>
+            <a href="#Home" class="button-custom">Home</a>
+            <a href="#details-amp" class="button-custom">About us</a>
+            <a href="#details-mission" class="button-custom">Our Mission</a>
+            <a href="#container-details-program" class="button-custom">Our Program</a>
+            <a href="#gallery" class="button-custom">Gallery</a>
+            <a href="#Contact" class="button-custom">Contact Us</a>
         </div>
     </section>
     <section id="main-slider" class="splide" aria-labelledby="carousel-heading">
@@ -41,108 +48,100 @@
             </ul>
         </div>
     </section>
-    <section id="about">
-        <div class="row">
-            <div id="left-about" class="col-7 box border-lights"></div>
-            <div id="right-about" class="col-5"></div>
+    <section id="ribbon">     
+        <div id="ribbon-group-img">
+            <p id="ribbon-txt">Let's Chat</p>
         </div>
-        <div class="cloud row">
-            <div class="light"></div>
-            <img id="plane"
-                src="https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight-by-vexels.png" />
+    </section>
+    <section id="nav-amp">
+        <div id="group-amp" class="row">
+            <img class="col-3 amp-img" src="assets/images/about_us_icon.svg">
+            <img class="col-3 amp-img" src="assets/images/our_mission_icon.svg">
+            <img class="col-3 amp-img" src="assets/images/our_program_icon.svg">
         </div>
-        <div id="we-are" class="container text-center">
-            <div class="row row-cols-5">
-                <img class="col we-are" src="assets/images/w1.jpg" />
-                <h5 class="txt-were">Confident</h5>
-                <img class="col we-are" src="assets/images/w2.jpg" />
-                <h5 class="txt-were">Cooperative</h5>
-                <img class="col we-are" src="assets/images/w3.jpg" />
-                <h5 class="txt-were">Knowladgeable</h5>
-                <img class="col we-are" src="assets/images/w4.JPG" />
-                <h5 class="txt-were">Responsible</h5>
-                <img class="col we-are" src="assets/images/w5.JPG" />
-                <h5 class="txt-were">Respectful</h5>
-                <img class="col we-are" src="assets/images/w6.jpg" />
-                <h5 class="txt-were">Tolerant</h5>
-                <img class="col we-are" src="assets/images/w7.jpg" />
-                <h5 class="txt-were">Innovative</h5>
-                <img class="col we-are" src="assets/images/w8.jpeg" />
+        <div id="group-amp" class="row">
+            <h4 id="about-us" class="col-3 amp-text">About Us</h4>
+            <h4 id="our-mission" class="col-3 amp-text">Our Mission</h4>
+            <h4 id="our-program" class="col-3 amp-text">Our Program</h4>
+        </div>
+        <div id="group-amp" class="row">
+            <p class="col-3 amp-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae veniam ipsum debitis nobis molestiae! Nostrum, nulla aspernatur. Veritatis consequatur vel iure. Asperiores veniam tempora fuga. Quae assumenda doloremque necessitatibus!</p>
+            <p class="col-3 amp-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae veniam ipsum debitis nobis molestiae! Nostrum, nulla aspernatur. Veritatis consequatur vel iure. Asperiores veniam tempora fuga. Quae assumenda doloremque necessitatibus!</p>
+            <p class="col-3 amp-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae veniam ipsum debitis nobis molestiae! Nostrum, nulla aspernatur. Veritatis consequatur vel iure. Asperiores veniam tempora fuga. Quae assumenda doloremque necessitatibus!</p>
+        </div>
+    </section>
+    <section id="container-details-amp">
+        <div id="group-planes" class="row" style="padding: 10%;">
+            <img class="col-6" src="assets/images/left-plane.svg">
+            <img class="col-6" src="assets/images/left-plane.svg" style="transform: rotate(180deg) scaleY(-1);">
+        </div>
+        <div id="details-amp">
+            <div id="details-left-content">
+                <h4 id="details-amp-head">About Us</h4>
+                <p id="details-amp-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae veniam ipsum debitis nobis molestiae! Nostrum, nulla aspernatur. Veritatis consequatur vel iure. Asperiores veniam tempora fuga. Quae assumenda doloremque necessitatibus!</p>
+            </div>
+            <div id="details-right-content">
+                <img class="rounded-circle" id="details-amp-img" src="assets/images/about_us_icon.svg">
             </div>
         </div>
     </section>
-    <section id="vismis">
-        <div id="content-vismis" class="row row-cols-2">
-            <div class="col-5 vismis-left">
-                <img id="vismis-img" src="assets/images/vismis.png" />
+    <section>
+        <div id="details-mission" class="row" style="padding: 50px;">
+            <div class="col-md-6 d-flex justify-content-center">
+                <img class="rounded-circle" id="details-mission-img" src="assets/images/our_mission_icon.svg">
             </div>
-            <div class="col-7 vismis-right">
-                <h1>Vission</h1>
-                <p>A mission statement is a short summary of an organization’s core purpose, focus, and aims.
-                    This usually includes a brief description of what the organization does and its key
-                    objectives.</p>
-                <h1>Mission</h1>
-                <p>A vision statement is a short description of an organization’s aspirations and the wider
-                    impact it aims to create. It should be a guiding beacon to everyone within the organization
-                    and something which underpins internal decision-making and determines the intended direction
-                    of the organization.</p>
+            <div i class="col-md-6">
+                <h4 id="details-mission-head" class="row">Our Mission</h4>
+                <p id="details-mission-desc" class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae veniam ipsum debitis nobis molestiae! Nostrum, nulla aspernatur. Veritatis consequatur vel iure. Asperiores veniam tempora fuga. Quae assumenda doloremque necessitatibus!</p>
             </div>
         </div>
     </section>
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <a href="https://goo.gl/maps/LoLk1rYrLzTFMLYU8">Our School</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <a href= https://wa.me/+6281316646924>Admin Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <a href="mailto:adm@cilukbaasbtc.sch.id" target="_blank" rel="noopener noreferrer">Admin E-mail</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2023, All Right Reserved <a
-                                    href="http://cilukbaasbtc.sch.id/">Cilukba</a></p>
-                        </div>
-                    </div>
-                </div>
+    <section id="container-details-program">
+        <div id="details-program">
+            <div id="details-left-content">
+                <h4 id="details-program-head">Our Program</h4>
+                <p id="details-program-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae veniam ipsum debitis nobis molestiae! Nostrum, nulla aspernatur. Veritatis consequatur vel iure. Asperiores veniam tempora fuga. Quae assumenda doloremque necessitatibus!</p>
+            </div>
+            <div id="details-right-content">
+                <img class="rounded-circle bg-primary" id="details-program-img" src="assets/images/our_program_icon.svg">
             </div>
         </div>
-    </footer>
-
+    </section>
+    <section id="gallery" class="text-center">
+        <div class="row row-cols-5">
+            <img class="col gallery" src="assets/images/w1.jpg" />
+            <h5 class="txt-gallery">Confident</h5>
+            <img class="col gallery" src="assets/images/w2.jpg" />
+            <h5 class="txt-gallery">Cooperative</h5>
+            <img class="col gallery" src="assets/images/w3.jpg" />
+            <h5 class="txt-gallery">Knowladgeable</h5>
+            <img class="col gallery" src="assets/images/w4.JPG" />
+            <h5 class="txt-gallery">Responsible</h5>
+            <img class="col gallery" src="assets/images/w5.JPG" />
+            <h5 class="txt-gallery">Respectful</h5>
+            <img class="col gallery" src="assets/images/w6.jpg" />
+            <h5 class="txt-gallery">Tolerant</h5>
+            <img class="col gallery" src="assets/images/w7.jpg" />
+            <h5 class="txt-gallery">Innovative</h5>
+            <img class="col gallery" src="assets/images/w8.jpeg" />
+        </div>
+    </section>
 </body>
 <script>
     $(document).ready(function () {
         const audio_hover = new Audio("assets/audio/hover.mp3");
         const audio_click = new Audio("assets/audio/click.mp3");
         // ---------------------- \/ \/ ----------------------
+        $(".gallery").hover(function(){
+            $(this).css({
+                'cursor': 'pointer'
+            });
+        })
+
+        $(".gallery").click(function(){
+            $(this).toggleClass('fullSize');
+        })
+
         $(".button-custom").mouseenter(function () {
             $(this).css({
                 'color': 'white',
@@ -151,6 +150,11 @@
             });
             audio_hover.play();
         });
+
+        $(".button-custom").click(function () {
+            audio_click.play();
+        });
+
         $(".button-custom").mouseleave(function () {
             $(this).css({
                 'color': 'white',
@@ -160,38 +164,32 @@
             audio_hover.currentTime = 0
         });
         // ---------------------- \/ \/ ----------------------
-        $(".medsos-logo").mouseenter(function () {
+        $(".bkg-round-white").mouseenter(function () {
             $(this).css({
-                'width': '2vw',
-                'height': '4vh',
-                'cursor': 'pointer'
+                'border':'solid blue 1px'
             });
             audio_hover.play();
         });
-        $(".medsos-logo").mouseleave(function () {
+
+        $(".bkg-round-white").click(function () {
             $(this).css({
-                'width': '1vw',
-                'height': '2vh'
+                'border':'solid blue 1px'
+            });
+            audio_click.play();
+        });
+
+        $(".bkg-round-white").mouseleave(function () {
+            $(this).css({
+                'border':'solid white 1px'
             });
             audio_hover.pause();
             audio_hover.currentTime = 0;
         });
 
-        $('#left-about').append(
-            `<h1>About US</h1>
-            <p>
-                &emsp;&emsp;Cilukbaa Preschool & Kindergarten, and Sekolah Bina Tunas Cemerlang are 
-                two integrated schools in Bogor.<br><br>&emsp;Cilukbaa Preschool & Kindergarten is established 
-                in 2004.  
-                We have four levels in guiding children within their golden age years. 
-                <br><br>&emsp;Starts from the early year, 
-                Toddler class, then Preschool, Kindergarten A and Kindergarten B. Sekolah Bina Tunas 
-                Cemerlang is for the Primary levels.
-            </p>`
-        )
-        $('#right-about').append(
-            `<img src="assets/images/about.png" alt="image 404">`
-        )
+        $("#instgr").click(function(){
+            window.location.href = "https://instagram.com/cilukbaasbtc?igshid=MDM4ZDc5MmU=";
+        })
+        
     });
 
     var elms = document.getElementsByClassName('splide');

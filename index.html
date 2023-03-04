@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="assets/css/details_mission.css">
 <link rel="stylesheet" href="assets/css/details_program.css">
 <link rel="stylesheet" href="assets/css/gallery.css">
+<link rel="stylesheet" href="assets/css/footer.css">
 
 <body>
     <section id="navbar" class="d-flex justify-content-md-between">
@@ -90,7 +91,7 @@
             <div class="col-md-6 d-flex justify-content-center">
                 <img class="rounded-circle" id="details-mission-img" src="assets/images/our_mission_icon.svg">
             </div>
-            <div i class="col-md-6">
+            <div class="col-md-6">
                 <h4 id="details-mission-head" class="row">Our Mission</h4>
                 <p id="details-mission-desc" class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae veniam ipsum debitis nobis molestiae! Nostrum, nulla aspernatur. Veritatis consequatur vel iure. Asperiores veniam tempora fuga. Quae assumenda doloremque necessitatibus!</p>
             </div>
@@ -108,6 +109,12 @@
         </div>
     </section>
     <section id="gallery" class="text-center">
+        <h1 style="text-align: center; 
+            width: 100%; 
+            color: white; 
+            background-color: rgb(238, 74, 197);">
+            Gallery
+        </h1>
         <div class="row row-cols-5">
             <img class="col gallery" src="assets/images/w1.jpg" />
             <h5 class="txt-gallery">Confident</h5>
@@ -126,20 +133,67 @@
             <img class="col gallery" src="assets/images/w8.jpeg" />
         </div>
     </section>
+    <section id="footer">
+        <div class="middle">
+            <div id="group-tt-footer" class="row align-items-center">
+                <div class="col-md-3">
+                    <p class="txt-footer-tt">Location</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-footer-tt">Hours</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-footer-tt">Contact</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-footer-tt">Follow</p>
+                </div>
+            </div>
+            <div id="group-desc-footer" class="row">
+                <div class="col-md-3">
+                    <p class="txt-footer-desc">
+                        Jl. RE. Martadinata no. 8A, Bogor-Indonesia.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-footer-desc">
+                        Monday - Friday<br>07.00 a.m - 15.00 p.m<br>Except on holidays and breaks
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-footer-desc">
+                        info@cilukbaschoo.com<br>Phone : 0251 - 8313736<br>Whatsapp : 0812.1234.5678
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="txt-footer-desc">
+                        Follow our news, updates, and activities on <a href="https://instagram.com/cilukbaasbtc?igshid=MDM4ZDc5MmU=">Instagram</a></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script>
+    const audio_hover = new Audio("assets/audio/hover.mp3");
+    const audio_click = new Audio("assets/audio/click.mp3");
     $(document).ready(function () {
-        const audio_hover = new Audio("assets/audio/hover.mp3");
-        const audio_click = new Audio("assets/audio/click.mp3");
         // ---------------------- \/ \/ ----------------------
+        $(".gallery").mouseleave(function () {
+            audio_hover.pause();
+            audio_hover.currentTime = 0
+        });
+        
         $(".gallery").hover(function(){
             $(this).css({
                 'cursor': 'pointer'
             });
+            audio_hover.play();
         })
 
         $(".gallery").click(function(){
             $(this).toggleClass('fullSize');
+            audio_click.play();
         })
 
         $(".button-custom").mouseenter(function () {

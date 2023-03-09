@@ -4,7 +4,24 @@ body {
     overflow-x: hidden;
 }
 
+#box-on-slider > h5{
+    font-weight: bolder;
+}
+
+#box-on-slider{
+    border-radius: 3%;
+    padding: 1%;
+    border: 3px white solid;
+    background-color: #ffffff96;
+    z-index: 3;
+    position: absolute;
+    top:10vh;
+    left:10vw;
+    max-width: 30vw;
+}
+
 #ribbon{
+    background-repeat: no-repeat;
     background-image: url('../images/ribbon_bkg.jpeg');
     background-size: cover;
     background-position: center;
@@ -20,6 +37,7 @@ body {
     background-image: url('../images/cloud.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 13%;
     height: 80%;
     float: right;

@@ -7,6 +7,7 @@
     height: 100%;
     width: 100%;
     background-image: url('../images/our_program_icon.jpg');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -47,7 +48,7 @@
 }
 
 #details-program-img {
-    width: 200px;
-    height: 200px;
+    width: 310px;
+    height: 310px;
     padding: 3%;
 }

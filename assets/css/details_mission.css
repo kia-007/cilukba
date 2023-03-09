@@ -5,7 +5,6 @@
 
 #details-mission {
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     background: rgb(174,242,185);
@@ -23,18 +22,19 @@
 }
 
 #details-mission-head{
-    width: 100%;
+    width: fit-content;
     padding: 1%;
-    box-shadow: 0px 10px 12px #b3afaf94;
-    background-color: rgb(91, 248, 70);
     color: white;
-    text-align: center;
 }
 
 #details-mission-desc{
-    padding: 3%;
+    margin-top: 2%;
     background-color: white;
     border: dashed 3px black;
+}
+
+#details-mission-desc > p{
+    padding: 5%;
 }
 
 #details-right-content {
@@ -47,8 +47,8 @@
 }
 
 #details-mission-img {
-    width: 200px;
-    height: 200px;
+    width: 310px;
+    height: 310px;
     padding: 3%;
     background-color: rgb(91, 248, 70);
 }
